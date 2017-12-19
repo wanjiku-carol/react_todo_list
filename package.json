@@ -11,11 +11,19 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "selenium-setup": "selenium-standalone install",
+    "selenium-start": "selenium-standalone start",
+    "e2e-tests": "wdio wdio.conf.js",
+    "e2e-tests-watch": "wdio wdio.conf.js --watch"
   },
   "devDependencies": {
+    "chai": "^4.1.2",
     "enzyme": "^3.2.0",
     "eslint": "^4.13.1",
-    "react-test-renderer": "^16.2.0"
+    "react-test-renderer": "^16.2.0",
+    "selenium-standalone": "^6.12.0",
+    "wdio-mocha-framework": "^0.5.12",
+    "webdriverio": "^4.9.11"
   }
 }
